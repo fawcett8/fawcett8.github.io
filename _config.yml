@@ -1,2 +1,4 @@
 name: Hidden Treasures
 markdown: kramdown
+
+theme: jekyll-theme-cayman
