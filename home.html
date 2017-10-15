@@ -1,6 +1,24 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-md-8">
+  <h1 class= "display-1"> Hidden Treasures</h1>
+  </div>
+    <div class="row">
+    <div class="col-md-12">
+    <h2>Our aim is for every city in the world to be represented by something unique.</h2>
+  </div>
+</div>
 <style>
-body { background-color: #5c5772; color: #fff; }
+body { background-color: #34282c; color: #fff; }
 #chartdiv {
   width: 100%;
   height: 500px;
@@ -130,111 +148,127 @@ var map = AmCharts.makeChart( "chartdiv", {
       "scale": 0.5,
       "title": "Brussels",
       "latitude": 50.8371,
-      "longitude": 4.3676
+      "longitude": 4.3676,
+      "url": "https://en.wikipedia.org/wiki/Brussels"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Copenhagen",
       "latitude": 55.6763,
-      "longitude": 12.5681
+      "longitude": 12.5681,
+      "url": "https://en.wikipedia.org/wiki/Copenhagen"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Paris",
       "latitude": 48.8567,
-      "longitude": 2.3510
+      "longitude": 2.3510,
+      "url": "https://en.wikipedia.org/wiki/Paris"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Reykjavik",
       "latitude": 64.1353,
-      "longitude": -21.8952
+      "longitude": -21.8952,
+      "url": "https://en.wikipedia.org/wiki/Reykjavik"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Moscow",
       "latitude": 55.7558,
-      "longitude": 37.6176
+      "longitude": 37.6176,
+      "url": "https://en.wikipedia.org/wiki/Moscow"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Madrid",
       "latitude": 40.4167,
-      "longitude": -3.7033
+      "longitude": -3.7033,
+      "url": "https://en.wikipedia.org/wiki/Madrid"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "London",
       "latitude": 51.5002,
       "longitude": -0.1262,
-      "url": "http://www.google.co.uk"
+      "url": "https://en.wikipedia.org/wiki/London"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Peking",
       "latitude": 39.9056,
-      "longitude": 116.3958
+      "longitude": 116.3958,
+      "url": "https://en.wikipedia.org/wiki/Peking"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "New Delhi",
       "latitude": 28.6353,
-      "longitude": 77.2250
+      "longitude": 77.2250,
+      "url": "https://en.wikipedia.org/wiki/New Dehli"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Tokyo",
       "latitude": 35.6785,
       "longitude": 139.6823,
-      "url": "http://www.google.co.jp"
+      "url": "https://en.wikipedia.org/wiki/Tokyo"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Ankara",
       "latitude": 39.9439,
-      "longitude": 32.8560
+      "longitude": 32.8560,
+      "url": "https://en.wikipedia.org/wiki/Ankara"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Buenos Aires",
       "latitude": -34.6118,
-      "longitude": -58.4173
+      "longitude": -58.4173,
+      "url": "https://en.wikipedia.org/wiki/Buenos Aires"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Brasilia",
       "latitude": -15.7801,
-      "longitude": -47.9292
+      "longitude": -47.9292,
+      "url": "https://en.wikipedia.org/wiki/Brasilia"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Ottawa",
       "latitude": 45.4235,
-      "longitude": -75.6979
+      "longitude": -75.6979,
+      "url": "https://en.wikipedia.org/wiki/Ottawa"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Washington",
       "latitude": 38.8921,
-      "longitude": -77.0241
+      "longitude": -77.0241,
+      "url": "https://en.wikipedia.org/wiki/Washington"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Kinshasa",
       "latitude": -4.3369,
-      "longitude": 15.3271
+      "longitude": 15.3271,
+      "url": "https://en.wikipedia.org/wiki/Kinshasa"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Cairo",
       "latitude": 30.0571,
-      "longitude": 31.2272
+      "longitude": 31.2272,
+      "url": "https://en.wikipedia.org/wiki/Cairo"
     }, {
       "zoomLevel": 5,
       "scale": 0.5,
       "title": "Pretoria",
       "latitude": -25.7463,
-      "longitude": 28.1876
+      "longitude": 28.1876,
+      "url": "https://en.wikipedia.org/wiki/Pretoria"
     } ]
   }
 } );
@@ -295,7 +329,8 @@ function createCustomMarker( image ) {
   return holder;
 }
 </script>
-		
+    
 <!-- HTML -->
 <div id="chartdiv"></div>
+</div><!-- /.b-->
 </html>
